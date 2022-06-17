@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Home: View {
     
-    @StateObject var appData: AppDataModel = AppDataModel()
+    @EnvironmentObject var appData: AppDataModel 
     
     var body: some View {
         TabView(selection: $appData.currentTab) {
